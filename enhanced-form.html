@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlissBroom – Book a Cleaning</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0 20px;
+      color: #333;
+    }
+
+    header, main, section, footer {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 900px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h1, h2, h3 {
+      color: #247158;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+    }
+
+    th {
+      background-color: #eef7f4;
+    }
+
+    form input, form select, form textarea, form button {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #247158;
+    }
+
+    button {
+      background-color: #247158;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1b5e4a;
+    }
+
+    audio, video {
+      margin-top: 10px;
+      width: 100%;
+      max-width: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BlissBroom Cleaning Services</h1>
+    <p>Professional eco-friendly cleaning that brings peace and purity to your home.</p>
+  </header>
+
+  <main>
+
+    <!-- List Section -->
+    <section>
+      <h2>Our Popular Services</h2>
+      <ul>
+        <li>Deep Home Cleaning</li>
+        <li>Kitchen & Appliance Detailing</li>
+        <li>Carpet and Upholstery Cleaning</li>
+        <li>Post-Renovation Cleanup</li>
+      </ul>
+
+      <h3>Steps to a Cleaner, Happier Home</h3>
+      <ol>
+        <li>Choose your service and book online</li>
+        <li>Receive confirmation and arrival window</li>
+        <li>We clean your space — naturally and thoroughly</li>
+        <li>Enjoy your refreshed, toxin-free environment!</li>
+      </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Service Comparison Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Duration</th>
+            <th>Starting Price</th>
+            <th>Eco-Friendly</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Standard Clean</td>
+            <td>2-3 hours</td>
+            <td>$80</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Deep Clean</td>
+            <td>4-5 hours</td>
+            <td>$150</td>
+            <td>✅</td>
+          </tr>
+          <tr>
+            <td>Move-In/Move-Out</td>
+            <td>5+ hours</td>
+            <td>$200</td>
+            <td>✅</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>See BlissBroom in Action</h2>
+
+      <h3>Our Work (Photo)</h3>
+      <img src="https://via.placeholder.com/500x300?text=Clean+Living+Room" alt="Cleaned living room" width="100%" />
+
+      <h3>Customer Testimonial (Audio)</h3>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Service Preview (Video)</h3>
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Book a Service</h2>
+      <form action="#" method="post" autocomplete="on">
+
+        <fieldset>
+          <legend>Your Information</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required minlength="3" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="^\d{10}$" placeholder="1234567890" required />
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Service Details</legend>
+
+          <label for="service">Select Service:</label>
+          <select id="service" name="service" required>
+            <option value="">-- Choose a service --</option>
+            <option value="standard">Standard Clean</option>
+            <option value="deep">Deep Clean</option>
+            <option value="move">Move-In/Out Clean</option>
+          </select>
+
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="notes">Additional Notes:</label>
+          <textarea id="notes" name="notes" rows="5" maxlength="300" placeholder="Let us know about pets, parking, etc."></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Confirmation</legend>
+
+          <label>
+            <input type="checkbox" name="agree" required />
+            I agree to the <a href="#">terms & conditions</a>.
+          </label>
+
+          <label for="referral">How did you hear about us?</label>
+          <input type="text" id="referral" name="referral" placeholder="Google, friend, etc." />
+
+          <label for="booking-id">Booking ID (readonly):</label>
+          <input type="text" id="booking-id" value="AUTO-GEN" readonly />
+        </fieldset>
+
+        <button type="submit">Submit Booking</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BlissBroom. Clean living starts here.</p>
+  </footer>
+
+</body>
+</html>
